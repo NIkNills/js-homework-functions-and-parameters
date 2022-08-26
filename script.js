@@ -15,3 +15,9 @@ user.sayHelloWorld = () => helloWorld;
 user.sayHi = function () {
   return `${this.name} ${this.surname} says Hi`;
 };
+
+function showPropAndValues(obj) {
+  for (let prop in obj) {
+    console.log(`${prop}: ${obj[prop]}`);
+  }
+}
