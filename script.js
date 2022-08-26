@@ -21,3 +21,12 @@ function showPropAndValues(obj) {
     console.log(`${prop}: ${obj[prop]}`);
   }
 }
+
+function isNestedObject(obj) {
+  let result = false;
+  for (let prop in obj) {
+    if (typeof obj[prop] === "object") result = true;
+  }
+
+  return result;
+}
